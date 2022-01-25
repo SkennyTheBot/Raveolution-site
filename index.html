@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+  <title>Raveolution | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="title" content="Raveolution | Home">
+  <meta name="description" content="Raveolution is an advanced faction server that let you do things you can't on other servers!">
+  <meta name="keywords" content="Raveolution Factions,Raveolution,raveolution,raveolution server,minecraft server">
+  <meta name="theme-color" content="#4bb4f1">
+
+  <!-- Edit this to change staff cards! -->
+  <script id="staff-template" type="text/template">
+    <div class="staff-card shrink">
+      <img src="https://mc-heads.net/avatar/{{ uuid }}">
+      <h3>{{ name }}</h3>
+      <h4>{{ rank }}</h4>
+    </div>
+  </script>
+
+  <script id="vote-template" type="text/template">
+    <div class="vote-card shrink shrink-dark">
+      <img src="img/Enchanted_Book.png">
+      <h3>{{ service }}</h3>
+      <h4><a href="{{ link }}" class="btn">Vote</a></h4>
+    </div>
+  </script>
+
+  <!--
+	Notice:
+	When you make changes to config,
+	add ?v and a random number to config.css/js
+	Example: <link rel="stylesheet" href="config.css?v=100">
+  -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+  <script src="js/fireflies.js"></script>
+  <script src="js/main.js"></script>
+  <script src="config.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Quicksand">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="config.css">
+</head>
+
+<body>
+
+  <div id="target"></div>
+
+  <script id="template" type="text/x-handlebars-template">
+
+  <header>
+    <div class="hero" id="hero">
+      <h1>Welcome to {{server_name}}!</h1>
+      <h3 class="server-status-container">Join <span class="server-status info">0</span> other people on <span class="info ip" id="ip" onclick="copyIP()">{{server_ip}}</span></h3>
+	  <div id="pinned">
+        <div class="pinned-card shrink shrink-pinned">
+            <i class="fas fa-thumbtack"></i><strong>announcement</strong>
+            <p>You can become a member of our staff team by applying.</p>
+            <a href="Announcement/pinned.html" class="btn">Read more</a>
+        </div>
+      </div>
+	</div>
+  </header>
+
+  <section id="header" class="dark">
+    <nav class="nav">
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Pages/Staff-team.html">Staff</a></li>
+        <li><a href="Pages/Announcement.html">Announcements</a></li>
+        <li><a href="#maintenance">Forums</a></li>
+        <li><a href="#maintenance">Store</a></li>
+      </ul>
+    </nav>
+</section>
+
+  <section class="dark">
+    <h1>Why Us?</h1>
+    <h1 style="font-size: 30px;">Things that set us apart:</h1>
+    <div class="feature right">
+      <img src="img/feature-1.jpg" width="500px" class="enlarge">
+      <p class="enlarge">
+        <strong style="color: #d84444;">Updating add-ons</strong>
+         Our add-ons were made by our developers, they are constantly working on improving and upgrading the server. 
+      </p>
+    </div>
+    <hr>
+    <div class="feature left">
+      <img src="img/feature-2.jpg" width="500px" class="enlarge">
+      <p class="enlarge">
+        <strong style="color: #d84444;">Experienced Staff</strong>
+        Our staff team is well complex, professional and well organized. <a href="Staff-team.html" style="text-decoration: underline; color: rgb(255, 255, 255);">Enter Staff Directory</a>
+      </p>
+    </div>
+    <hr>
+    <div class="feature right">
+      <img src="img/feature-3.jpg" width="500px" class="enlarge">
+      <p class="enlarge">
+        <strong style="color: #d84444;">Reason 3</strong><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare viverra accumsan. Fusce scelerisque a augue eu mollis. Praesent eu sollicitudin felis. Proin risus nulla, volutpat posuere lorem sit amet.
+      </p>
+    </div>
+    <hr>
+    <div class="feature left">
+      <img src="img/feature-4.jpg" width="500px" class="enlarge">
+      <p class="enlarge">
+        <strong style="color: #d84444;">Reason 4</strong><br>
+        Praesent mollis, diam at vestibulum sodales, mi metus sagittis sem, et lobortis nulla dui nec leo. Mauris at metus tellus. Ut malesuada augue nec nisi. endrerit placerat dui. Morbi nec nisl quis est mattis facilisis ut quis enim.
+      </p>
+    </div>
+  </section>
+
+  <section class="dark">
+    <h1>Vote for us</h1>
+    <h1 style="font-size: 15px;">When you vote, we will do our magic and magically create a special prize just for you.</h1>
+    <div id="vote" class="grid"></div>
+  </section>
+  <section class="dark">
+  <h2 style="font-size: 15px; margin-bottom: 8px;">If you want to help the server improve, you can donate by clicking the button below!</h2>
+  <div class="buttons">
+  <a href="Pages/Store.html" class="btn-donate">Donate Now</a>
+  </div>
+  </section>
+  <footer>
+    <p>&copy; {{server_name}} | With you, for you since 2022</p><br><br>
+    <div class="buttons">
+        <a href="https://discord.raveolution.me#redirect-successful" class="btn">Discord</a>
+        <a href="https://www.youtube.com/channel/UCtCHBYOTQzATIPIXNs770_g#redirect-successful" class="btn">YouTube</a>
+        <a href="https://www.instagram.com/raveolution_official#redirect-successful" class="btn">Instagram</a>
+        <a href="#Facebook-undefined" class="btn">Facebook</a>
+        <a href="#Twitter-undefined" class="btn">Twitter</a>
+      </div>
+  </footer>
+  </script>
+</body>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+  <title>Raveolution | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="title" content="Raveolution | Home">
+  <meta name="description" content="Raveolution is an advanced faction server that let you do things you can't on other servers!">
+  <meta name="keywords" content="Raveolution Factions,Raveolution,raveolution,raveolution server,minecraft server">
+  <meta name="theme-color" content="#4bb4f1">
+
+  <!-- Edit this to change staff cards! -->
+  <script id="staff-template" type="text/template">
+    <div class="staff-card shrink">
+      <img src="https://mc-heads.net/avatar/{{ uuid }}">
+      <h3>{{ name }}</h3>
+      <h4>{{ rank }}</h4>
+    </div>
+  </script>
+
+  <script id="vote-template" type="text/template">
+    <div class="vote-card shrink shrink-dark">
+      <img src="img/Enchanted_Book.png">
+      <h3>{{ service }}</h3>
+      <h4><a href="{{ link }}" class="btn">Vote</a></h4>
+    </div>
+  </script>
+
+  <!--
+	Notice:
+	When you make changes to config,
+	add ?v and a random number to config.css/js
+	Example: <link rel="stylesheet" href="config.css?v=100">
+  -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+  <script src="../js/fireflies.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../config.js"></script>
+
+  <script>tosAgreed = true</script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Quicksand">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../config.css">
+</head>
+
+<body>
+
+  <div id="target"></div>
+
+  <script id="template" type="text/x-handlebars-template">
+
+  <header>
+      <div class="hero" id="hero" style="height:15vh">
+      <h1>Announcements</h1>
+      </div>
+  </header>
+
+  <section id="header" class="dark">
+    <nav class="nav">
+      <ul class="nav_links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="Staff-team.html">Staff</a></li>
+        <li><a href="Announcement.html">Announcements</a></li>
+        <li><a href="#maintenance">Forums</a></li>
+        <li><a href="#maintenance">Store</a></li>
+      </ul>
+    </nav>
+</section>
+
+    <section class="dark">
+      <div id="news">
+        <div class="news-card">
+          <strong>Example Announcement</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare viverra accumsan. Fusce scelerisque a augue eu mollis. Praesent eu sollicitudin felis. Proin risus nulla, volutpat posuere lorem sit amet.</p>
+          <p>Praesent mollis, diam at vestibulum sodales, mi metus sagittis sem, et lobortis nulla dui nec leo. Mauris at metus tellus. Ut malesuada augue nec nisi. endrerit placerat dui. Morbi nec nisl quis est mattis facilisis ut quis enim.</p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+      <br>
+      <div id="news">
+        <div class="news-card">
+          <strong>Example Announcement</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare viverra accumsan. Fusce scelerisque a augue eu mollis. Praesent eu sollicitudin felis. Proin risus nulla, volutpat posuere lorem sit amet.</p>
+          <p>Praesent mollis, diam at vestibulum sodales, mi metus sagittis sem, et lobortis nulla dui nec leo. Mauris at metus tellus. Ut malesuada augue nec nisi. endrerit placerat dui. Morbi nec nisl quis est mattis facilisis ut quis enim.</p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+      <br>
+      <div id="news">
+        <div class="news-card">
+          <strong>Example Announcement</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare viverra accumsan. Fusce scelerisque a augue eu mollis. Praesent eu sollicitudin felis. Proin risus nulla, volutpat posuere lorem sit amet.</p>
+          <p>Praesent mollis, diam at vestibulum sodales, mi metus sagittis sem, et lobortis nulla dui nec leo. Mauris at metus tellus. Ut malesuada augue nec nisi. endrerit placerat dui. Morbi nec nisl quis est mattis facilisis ut quis enim.</p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </section>
+
+
+  <footer>
+    <p>&copy; {{server_name}} | With you, for you since 2022</p>
+    <div class="buttons">
+        <a href="https://discord.raveolution.me#redirect-successful" class="btn">Discord</a>
+        <a href="https://www.youtube.com/channel/UCtCHBYOTQzATIPIXNs770_g#redirect-successful" class="btn">YouTube</a>
+        <a href="https://www.instagram.com/raveolution_official#redirect-successful" class="btn">Instagram</a>
+        <a href="#Facebook-undefined" class="btn">Facebook</a>
+        <a href="#Twitter-undefined" class="btn">Twitter</a>
+      </div>
+  </footer>
+  </script>
+</body>
