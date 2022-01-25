@@ -374,7 +374,7 @@ footer {
 	transition: all .5s;
 }
 .enlarge-img:hover {
-	transform: scale(2.1);
+	transform: scale(1.8);
 }
 .shrink {
 	transition: all .3s;
