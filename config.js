@@ -1,6 +1,6 @@
 var server_name = "Raveolution";
-var server_ip = "51.89.8.23";
-var server_port = 25676; /*25565*/
+var server_ip = "starsurvival.xyz";
+var server_port = 25568; /*25565*/
 var ip_copied = "IP copied!";
 
 var firefly_count = 20;
