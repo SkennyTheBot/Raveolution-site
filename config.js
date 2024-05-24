@@ -1,4 +1,4 @@
-var server_name = "Raveolution";
+var server_name = "StarSurvival";
 var server_ip = "starsurvival.xyz";
 var server_port = 25568; /*25565*/
 var ip_copied = "IP copied!";
