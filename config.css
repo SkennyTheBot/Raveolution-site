@@ -4,23 +4,23 @@
  */
 
 :root {
-  --dark-color: #24272b; /* Colour of dark section */
-  --dark-text-color: #777; /* Colour of text in dark section */
+  --dark-color: #333333; /* Dark gray for dark sections */
+  --dark-text-color: #FFFFFF; /* White text for dark sections */
   
-  --light-color: #777; /* Colour of light section */
-  --light-text-color: #24272b; /* Colour of text in light section */
+  --light-color: #F0F0F0; /* Light gray for light sections */
+  --light-text-color: #333333; /* Dark gray text for light sections */
   
-  --button-color: #24272b; /* Colour of buttons */
-  --button-text-color: #777; /* Colour of the text in buttons */
-  --button-hover-color: #d92b2b;/*#2b6ed9; /* Colour of button when hovered over */
-  --button-hover-text-color: #fff; /* Colour of text in button when hovered over */
+  --button-color: #FFA500; /* Orange for buttons */
+  --button-text-color: #FFFFFF; /* White text for buttons */
+  --button-hover-color: #FFCC00; /* Yellow for button hover */
+  --button-hover-text-color: #333333; /* Dark text for button hover */
   
-  --info-color: #4bb4f1; /* Colour of important text (Player count, IP) */
+  --info-color: #FFD700; /* Yellow for important text */
   
-  --pinned-message-color: #222426; /* Colour pinned message section */
-  --pinned-message-text-color: #fff; /* Colour of text in pinned message section */
-  --pinned-button-color: #505050; /* Colour of button in pinned message section */
-  --pinned-button-text-color: #fff; /* Colour of text in button in pinned message section */
-  --pinned-button-hover-color: #b32a3d; /* Colour of button in pinned message section when hovered over */ 
-  --pinned-button-hover-text-color: #fff; /* Colour of text in button in pinned message section when hovered over */
+  --pinned-message-color: #444444; /* Dark gray for pinned message */
+  --pinned-message-text-color: #FFFFFF; /* White text for pinned message */
+  --pinned-button-color: #FFA500; /* Orange for pinned button */
+  --pinned-button-text-color: #FFFFFF; /* White text for pinned button */
+  --pinned-button-hover-color: #FFCC00; /* Yellow for pinned button hover */
+  --pinned-button-hover-text-color: #333333; /* Dark text for pinned button hover */
 }
